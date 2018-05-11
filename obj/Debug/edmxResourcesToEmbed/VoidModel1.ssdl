@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VoidModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="VoidModel1StoreContainer">
+    <EntitySet Name="Users" EntityType="VoidModel1.Store.Users" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Confirm" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Subject" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Score" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Teacher" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+</Schema>
